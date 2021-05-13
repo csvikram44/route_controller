@@ -1,5 +1,5 @@
-# Category / Product
-Display categories on custom route and home page.
+# Route and Controller - Magento2
+Display categories on custom route using controller.
 
 
 ## Installation Guide

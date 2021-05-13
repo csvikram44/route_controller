@@ -1,0 +1,17 @@
+<?php
+/**
+ * @var \Magento\Catalog\Block\Product\View $block;
+ */
+
+$item = $block->getProduct();
+?>
+
+<?php if ($item->getComingsoon()):?>
+<h1>Vikram</h1>
+<?php endif;?>
+
+<?php if (!empty($item->getDiscountPercentage())) :?>
+    <div class="value">
+        <?php echo $item->getDiscountPercentage(); ?>
+    </div>
+<?php endif; ?>

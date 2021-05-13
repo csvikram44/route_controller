@@ -1,0 +1,22 @@
+<?php
+/**
+ * @var $block CsVikram\Product\Block\Product;
+ **/
+?>
+
+<?php
+        $items = $block->getCategoryCollection();
+        //$img_path = $block->getUrl('pub');
+        foreach ($items as $item):?>
+            <?= $item->getName() ?>
+        </br>
+            <?php /*
+            <img src="<?php echo $block->getBaseUrl().'pub'.$item->getImageUrl(); ?>"> */?>
+<?php endforeach; ?>
+<?php
+    /*$items = $block->getProductCollection();
+    foreach ($items as $item)
+    {
+        echo $item->getName().' = '. $item->getFinalPrice().'<br>';
+    }*/
+
